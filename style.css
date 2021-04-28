@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: #000000;
+  background-color: #F7F9F9;
+  font-size: 16px;
+  text-align: left;
+  font-weight: 700;
+}
+
+
+
+/* headings */
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+/*image */
+img {
+  width: 100%;
+}
+
+.container {
+  overflow:auto;
+}
+nav {
+  text-align: right;
+  flex-grow: 1;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 20px 10px;
+  background-color: #ffffff
+}
+
+.container a {
+  font-size: 1.35em;
+}
+
+/* links and buttons */
+a {
+  color: #eb7a71;
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:visited {
+  /* visited link */
+  color: #eb7a71;
+}
+
+a:hover {
+  color: #eb7a71;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: #b57282;
+}
+
+a:hover,
+a:focus {
+  color: #2B6B82;
+  text-decoration: underline;
+}
+
+.button {
+  background-color: transparent,
+    padding: 10px;
+  border: 2px solid #2B6B82;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #eb7a71;
+  border: 2px solid #2B6B82;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.button.contact:hover {
+  background-color: #2B6B82;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.social a i {
+  padding: 15px;
+}
+
+.social {
+  display: flex;
+}
+
+.story img {
+    width: 100%;
+    float: left;
+    padding-bottom: 100px;
+  }
+
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/*Layout styling */
+
+
+#hero {
+  padding: 0px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  background-color: #f2f2f2;
+  margin-bottom: 16px;
+}
+
+#hero img {
+  width: 100%;
+  float: left;
+  padding-bottom: 100px;
+}
+
+#hero h1 {
+margin: 0;
+padding: 0.67rem 0;
+}
+
+#hero span {
+  display: block;
+}
+
+#contact {
+background-color: #f2f2f2;
+padding-top: 16px;
+margin-top: 48px;
+padding-left: 10px;
+}
+
+#header .row {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #efefef;
+  padding-top: 30px;
+}
+
+#header .column h1 {
+  background-color: #ffffff;
+  color: #eb7a71;
+}
+
+#header .column img {
+  float: right;
+}
+#header img {
+  padding-top: 150px;
+  width: 50%;
+  padding-right: 20px;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#about h1 {
+padding-left: 15px;
+}
+
+#story h2 {
+  padding-left: 50px;
+}
+
+#story p{
+  padding-left: 50px;
+  line-height: 1.6;
+}
