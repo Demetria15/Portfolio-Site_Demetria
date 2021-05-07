@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #000000;
@@ -7,6 +10,46 @@ body {
   line-height: 1.5;
 }
 
+header {
+  background-color: #F8F8F8;
+  padding: 0.625em;
+  margin: 0em;
+  border-bottom: 1px solid #eb7a71;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 140px;
+}
+
+.logo {
+font-family: 'Monoton', cursive;
+  text-decoration:none;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%
+}
+
+nav > ul > li > a:active {
+  color: #07D8DE;
+}
 
 
 /* headings */
@@ -77,6 +120,7 @@ a:active {
 
 footer {
 background-color: #f2f2f2;
+  border-top: 1px solid #eb7a71;
 padding: 16px 0;
 margin-top: 48px;
 text-align: center;
@@ -106,6 +150,18 @@ text-align: center;
 
 /*Layout styling */
 
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.logo {
+  max-width: 250px;
+}
+
 
 #hero {
   padding: 0px 0;
@@ -123,6 +179,7 @@ text-align: center;
 #hero h1 {
 margin: 0;
 padding: 0.67rem 0;
+text-align: center;
 }
 
 #hero span.smallh1{
@@ -140,4 +197,19 @@ padding: 0.67rem 0;
 
 .color3 {
   color: #07D8DE;
+}
+
+#header p {
+  padding-bottom: 2em;
+}
+
+.container h2 {
+  padding-top: 0.5em;
+}
+#story p {
+  display: inline-block;
+}
+/*portfolio */
+.indent  {
+  margin-left: 30px;
 }
