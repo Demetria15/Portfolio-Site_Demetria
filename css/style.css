@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   font-family: "Josefin Sans", sans-serif;
   color: #000000;
@@ -12,8 +13,6 @@ body {
 
 header {
   background-color: #F8F8F8;
-  padding: 0.625em;
-  margin: 0em;
   border-bottom: 1px solid #eb7a71;
   text-align: center;
   padding: 10px 0;
@@ -22,24 +21,24 @@ header {
 }
 
 main {
-  padding-top: 140px;
+  padding-top: 113px;
 }
 
 .logo {
-font-family: 'Monoton', cursive;
-  text-decoration:none;
+  font-family: 'Monoton', cursive;
+  text-decoration: none;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   font-weight: 700;
   text-decoration: none;
@@ -47,10 +46,9 @@ nav > ul > li > a {
   width: 100%
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: #07D8DE;
 }
-
 
 /* headings */
 h1, h2, h3, h4 {
@@ -64,6 +62,7 @@ h1 {
 
 h2 {
   font-size: 2.25em;
+  padding-top: 0.5em;
 }
 
 h3 {
@@ -100,7 +99,6 @@ a:active {
   color: #2B6B82;
 }
 
-
 .button {
   background-color: transparent;
   padding: 10px 30px;
@@ -111,7 +109,6 @@ a:active {
   text-decoration: none;
 }
 
-
 .button:hover {
   background-color: #2B6B82;
   color: #ffffff;
@@ -119,11 +116,11 @@ a:active {
 }
 
 footer {
-background-color: #f2f2f2;
+  background-color: #f2f2f2;
   border-top: 1px solid #eb7a71;
-padding: 16px 0;
-margin-top: 48px;
-text-align: center;
+  padding: 16px 0;
+  margin-top: 48px;
+  text-align: center;
 }
 
 .social a i {
@@ -133,7 +130,7 @@ text-align: center;
 }
 
 .social a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .container {
@@ -141,27 +138,24 @@ text-align: center;
 }
 
 .story img {
-    width: 100%;
-    float: left;
-    padding-bottom: 100px;
-  }
-
-
+  width: 100%;
+  float: left;
+  padding-bottom: 100px;
+}
 
 /*Layout styling */
-
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 .logo {
   max-width: 250px;
 }
-
 
 #hero {
   padding: 0px 0;
@@ -169,24 +163,24 @@ text-align: center;
   width: 100%;
   text-align: left;
   background-color: #f2f2f2;
-  margin-bottom: 16px;
 }
 
 #hero img {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 #hero h1 {
-margin: 0;
-padding: 0.67rem 0;
-text-align: center;
+  margin: 0;
+  padding: 0.67rem 0;
+  text-align: center;
 }
 
-#hero span.smallh1{
+#hero span.smallh1 {
   display: block;
   margin-top: 1em;
   font-size: 70%;
 }
+
 .color1 {
   color: #FF5F19;
 }
@@ -203,13 +197,140 @@ text-align: center;
   padding-bottom: 2em;
 }
 
-.container h2 {
-  padding-top: 0.5em;
-}
 #story p {
   display: inline-block;
 }
+
 /*portfolio */
-.indent  {
-  margin-left: 30px;
+.indent {
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  margin-left: -20px;
 }
+
+.video {
+  width: 100%;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.listspace li {
+  margin: 1em 0;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+  body {
+    font-size: 30px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
