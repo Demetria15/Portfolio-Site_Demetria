@@ -14,7 +14,6 @@ body {
 header {
   background-color: #F8F8F8;
   border-bottom: 1px solid #eb7a71;
-  text-align: center;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -27,15 +26,13 @@ main {
 .logo {
   font-family: 'Monoton', cursive;
   text-decoration: none;
+  font-size: 30px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -44,6 +41,25 @@ nav>ul>li>a {
   text-decoration: none;
   display: inline-block;
   width: 100%
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
 }
 
 nav>ul>li>a:active {
@@ -107,6 +123,7 @@ a:active {
   transition: 0.2s opacity;
   display: inline-block;
   text-decoration: none;
+  transition-duration: 0.2s opacity;
 }
 
 .button:hover {
@@ -151,10 +168,6 @@ footer {
 .row {
   margin: 25px 0;
   /* 25px top and bottom, 0 left and right */
-}
-
-.logo {
-  max-width: 250px;
 }
 
 #hero {
@@ -211,6 +224,7 @@ footer {
 
 .video {
   width: 100%;
+  height: 362px;
 }
 
 ul {
@@ -285,11 +299,11 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 6px;
   }
 
   main {
-    padding-top: 108px;
+    padding-top: 79px;
   }
 
   #about-page h3 {
@@ -299,17 +313,39 @@ Medium devices (640px and larger)
   #about-page h2 {
     margin: auto;
   }
-}
 
-[class*="col-"] {
-  float: left;
-  padding: 0 10px;
-}
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #hero .row, #header .row {
+    display: flex;
+  }
+
+  #hero .column, #header .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 /* ==============================
@@ -367,14 +403,50 @@ Large devices (1024px or larger)
   h2 {
     background-color: #000;
     color: #fff;
-    padding: 0.8em;
-    margin-left: -20px;
+    padding: 30px;
   }
 
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .fullheading {
+    background-color: #000;
+    color: #fff;
+    padding: 0.8em 0;
+  }
+
+  .textlarge {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  footer h2 {
+    background-color: transparent;
+    color: #000;
+  }
+
+  .mth3 {
+    margin-top: 1.7em;
+  }
+
+  p {
+    padding-top: 1em;
+  }
+
+  #story p, #skills .row {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #story a {
+    margin-left: 30px;
+  }
+
+  h2.textlarge {
+    padding-left: 0;
   }
 }
 
