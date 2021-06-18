@@ -14,7 +14,6 @@ body {
 header {
   background-color: #F8F8F8;
   border-bottom: 1px solid #eb7a71;
-  text-align: center;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -36,16 +35,41 @@ nav>ul {
   margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
-
 nav>ul>li>a {
   padding: 0 15px;
   font-weight: 700;
   text-decoration: none;
   display: inline-block;
-  width: 100%
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  text-align: right;
 }
 
 nav>ul>li>a:active {
@@ -300,25 +324,38 @@ Medium devices (640px and larger)
     margin: auto;
   }
 
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px;
+  }
 
-[class*="col-"] {
-  float: left;
-  padding: 0 10px;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-#hero .row, #header .row {
-  display: flex;
-}
-#hero .column, #header .column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  #hero .row, #header .row {
+    display: flex;
+  }
+
+  #hero .column, #header .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 /* ==============================
@@ -384,11 +421,13 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
   .fullheading {
     background-color: #000;
     color: #fff;
     padding: 0.8em 0;
   }
+
   .textlarge {
     max-width: 70%;
     margin: 0 auto;
@@ -398,19 +437,24 @@ Large devices (1024px or larger)
     background-color: transparent;
     color: #000;
   }
+
   .mth3 {
     margin-top: 1.7em;
   }
+
   p {
     padding-top: 1em;
   }
+
   #story p, #skills .row {
     padding-left: 30px;
     padding-right: 30px;
   }
+
   #story a {
     margin-left: 30px;
   }
+
   h2.textlarge {
     padding-left: 0;
   }
