@@ -40,7 +40,6 @@ nav>ul>li>a {
   font-weight: 700;
   text-decoration: none;
   display: inline-block;
-  width: 100%
 }
 
 .navtoggle li:not(:last-child) {
@@ -54,12 +53,23 @@ nav>ul>li>a {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top: 2px;
+  top: 10px;
   font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0;
 }
 
 .navtoggle.responsive li {
   display: block;
+  padding: 10px 0;
+  text-align: right;
 }
 
 nav>ul>li>a:active {
