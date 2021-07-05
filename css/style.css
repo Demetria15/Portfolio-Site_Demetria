@@ -169,9 +169,6 @@ footer {
   text-decoration: none;
 }
 
-.container {
-  padding: 0 5%;
-}
 
 .story img {
   width: 100%;
@@ -422,6 +419,25 @@ Medium devices (640px and larger)
 
   #skills .row .col-md-6:last-child {
     padding-left: 3em;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  #portfolio h3 {
+    margin-top: 0;
+  }
+  #story h2 {
+    padding-top: 0;
+  }
+  #story .col-md-4 {
+    padding-right: 1em;
+  }
+  #story .col-md-8  {
+    padding-left: 1em;
+    border-left: 1px solid #eb7a71;
   }
 }
 
