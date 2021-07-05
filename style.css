@@ -142,7 +142,7 @@ a:active {
   transition: 0.2s opacity;
   display: inline-block;
   text-decoration: none;
-  transition-duration: 0.2s opacity;
+  transition-duration: 0.2s;
 }
 
 .button:hover {
