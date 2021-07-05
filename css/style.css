@@ -83,7 +83,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 3em;
 }
 
 h2 {
@@ -97,6 +97,15 @@ h3 {
 
 h4 {
   font-size: 1.35em;
+}
+
+#skills h4 {
+  margin-bottom: 0;
+}
+
+#skills ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 /*image */
@@ -133,7 +142,7 @@ a:active {
   transition: 0.2s opacity;
   display: inline-block;
   text-decoration: none;
-  transition-duration: 0.2s opacity;
+  transition-duration: 0.2s;
 }
 
 .button:hover {
@@ -206,14 +215,29 @@ footer {
 
 .color1 {
   color: #FF5F19;
+  animation-duration: 4s;
+  animation-name: changecolor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 .color2 {
   color: #8613F0;
+  animation-duration: 4s;
+  animation-name: changecolor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 .color3 {
   color: #07D8DE;
+  animation-duration: 4s;
+  animation-name: changecolor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
 #header p {
@@ -243,6 +267,45 @@ ul {
 
 .listspace li {
   margin: 1em 0;
+}
+
+#section1, #section2, #section3, #section4, #section5, #section6, #section7 {
+  padding-top: 40px;
+}
+
+p.toc {
+  padding: 0 !important;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.btt {
+  text-align: right;
+}
+
+ul {
+  line-height: 2em;
+}
+
+.background {
+  background-color: #000;
+  color: #fff;
+  padding: 1em 2em;
+}
+
+/*Keyframes */
+@keyframes changecolor {
+  0% {
+    color: #FF5F19;
+  }
+
+  50% {
+    color: #8613F0;
+  }
+
+  100% {
+    color: #07D8DE;
+  }
 }
 
 /* ==============================
@@ -356,6 +419,10 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+
+  #skills .row .col-md-6:last-child {
+    padding-left: 3em;
+  }
 }
 
 /* ==============================
@@ -457,6 +524,10 @@ Large devices (1024px or larger)
 
   h2.textlarge {
     padding-left: 0;
+  }
+
+  #skills .row .col-md-6:last-child {
+    padding-left: 5em;
   }
 }
 
