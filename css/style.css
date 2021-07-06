@@ -20,7 +20,7 @@ header {
 }
 
 main {
-  padding-top: 113px;
+  padding-top: 66px;
 }
 
 .logo {
@@ -83,20 +83,21 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.8em;
   padding-top: 0.5em;
+  margin-bottom: 0;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.4em;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1em;
 }
 
 #skills h4 {
@@ -250,7 +251,6 @@ footer {
   background-color: #000;
   color: #fff;
   padding: 1em;
-  margin-left: -20px;
 }
 
 .video {
@@ -422,6 +422,7 @@ Medium devices (640px and larger)
   }
   h1 {
     font-size: 2.5em;
+    line-height: 1.2;
   }
   h3 {
     font-size: 1.5em;
@@ -497,6 +498,10 @@ Large devices (1024px or larger)
     background-color: #000;
     color: #fff;
     padding: 30px;
+  }
+
+  #story h2 {
+    padding-top: 30px;
   }
 
   .container {
